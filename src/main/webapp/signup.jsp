@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/form-elements.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/wizard.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -34,39 +34,6 @@
 <body>
 
 <!-- Top menu -->
-<nav class="navbar navbar-inverse navbar-no-bg" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html">BootZard - Bootstrap Wizard Template</a>
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="top-navbar-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-							<span class="li-text">
-								Put some text or
-							</span>
-                    <a href="#"><strong>links</strong></a>
-                    <span class="li-text">
-								here, or some icons:
-							</span>
-                    <span class="li-social">
-								<a href="https://www.facebook.com/pages/Azmindcom/196582707093191" target="_blank"><i class="fa fa-facebook"></i></a>
-								<a href="https://twitter.com/anli_zaimi" target="_blank"><i class="fa fa-twitter"></i></a>
-								<a href="https://plus.google.com/+AnliZaimi_azmind" target="_blank"><i class="fa fa-google-plus"></i></a>
-								<a href="https://github.com/AZMIND" target="_blank"><i class="fa fa-github"></i></a>
-							</span>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
 
 <!-- Top content -->
 <div class="top-content">
