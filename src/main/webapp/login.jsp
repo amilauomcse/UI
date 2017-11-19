@@ -35,15 +35,7 @@
 <body style="background-color: #000027">
 
 <!-- Top content -->
-<div class="top-content" style="    background-image: -webkit-linear-gradient(top left, #973999, #f8598b, #f7bf00);
-    background-image: linear-gradient(to bottom right, #973999, #f8598b, #f7bf00);
-    bottom: 0;
-    left: 0;
-    padding-bottom: 4rem;
-    position: absolute;
-    right: 0;
-    top: 0;
-    overflow-y: auto;">
+<div class="top-content">
 
     <div class="inner-bg">
 
@@ -93,7 +85,7 @@
                                 <div class="col-sm-12" >
                                 <a style="float: right; color: white;" href="#" >Forgot password</a>
                                 </div>
-                                <button style="font-size: 2em" type="submit" onclick="location.href('welcome.jsp')" class="btn btn-primary">Sign in</button>
+                                <button style="font-size: 2em" type="submit" onclick="location.href('welcome.jsp')" class="btn btn-primary">Log in</button>
                             </form>
                     </div>
 
