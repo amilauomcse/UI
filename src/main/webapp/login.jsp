@@ -22,20 +22,24 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script type="text/javascript" src="assets/js/plugins/angular/angular.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/angular/angular-cookies-1.6.0.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/angular/angular-animate.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/angular/angular-aria.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/angular/angular-sanitize.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/angular/angular-material.min.js"></script>
 
-    <!-- Favicon and touch icons -->
-    <%--<link rel="shortcut icon" href="assets/ico/favicon.png">--%>
-    <%--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">--%>
-    <%--<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">--%>
-    <%--<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">--%>
-    <%--<link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">--%>
-
+    <script type="text/javascript" src="assets/js/plugins/angular/select.js"
+            async></script>
+    <script type="text/javascript" src="assets/js/blimplt/blimplt-module.js"></script>
+    <script type="text/javascript"
+            src="assets/js/blimplt/loginController.js"></script>
 </head>
 
 <body style="background-color: #000027">
 
 <!-- Top content -->
-<div class="top-content">
+<div class="top-content" ng-app="blimplt" ng-controller="blimplt" ng-cloak>
 
     <div class="inner-bg">
 
@@ -74,18 +78,18 @@
                             <form role="form" action="" method="post" class="login-form">
                                 <div class="form-group">
                                     <label class="sr-only" for="form-username">Username</label>
-                                    <input type="text" name="form-username" placeholder="Username..."
+                                    <input ng-model="loginForm.email" type="text" name="form-username" placeholder="Username..."
                                            class="text-form" id="form-username">
                                 </div>
                                 <div class="form-group">
                                     <label class="sr-only" for="form-password">Password</label>
-                                    <input type="password" name="form-password" placeholder="Password..."
+                                    <input ng-model="loginForm.password" type="password" name="form-password" placeholder="Password..."
                                            class="text-form" id="form-password">
                                 </div>
                                 <div class="col-sm-12" >
                                 <a style="float: right; color: white;" href="#" >Forgot password</a>
                                 </div>
-                                <button style="font-size: 2em" type="submit" onclick="location.href('welcome.jsp')" class="btn btn-primary">Log in</button>
+                                <button type="button" ng-click="logIn()" style="font-size: 2em"   class="btn btn-primary">Log in</button>
                             </form>
                     </div>
 
@@ -141,10 +145,10 @@
 
 
 <!-- Javascript -->
-<script src="assets/js/jquery-1.11.1.min.js"></script>
+<script src="assets/js/plugins/jquery-1.11.1.min.js"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-<script src="assets/js/jquery.backstretch.min.js"></script>
-<script src="assets/js/scripts.js"></script>
+<script src="assets/js/plugins/jquery.backstretch.min.js"></script>
+<script src="assets/js/plugins/scripts.js"></script>
 
 <!--[if lt IE 10]>
 <script src="assets/js/placeholder.js"></script>

@@ -145,11 +145,11 @@
 
 
 <!-- Javascript -->
-<script src="assets/js/jquery-1.11.1.min.js"></script>
+<script src="assets/js/plugins/jquery-1.11.1.min.js"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-<script src="assets/js/jquery.backstretch.min.js"></script>
-<script src="assets/js/retina-1.1.0.min.js"></script>
-<script src="assets/js/wizard.js"></script>
+<script src="assets/js/plugins/jquery.backstretch.min.js"></script>
+<script src="assets/js/plugins/retina-1.1.0.min.js"></script>
+<script src="assets/js/plugins/wizard.js"></script>
 
 <!--[if lt IE 10]>
 <script src="assets/js/placeholder.js"></script>

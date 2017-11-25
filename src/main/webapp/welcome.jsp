@@ -55,7 +55,7 @@
 <!-- /#wrapper -->
 
 <!-- Bootstrap core JavaScript -->
-<script src="assets/js/jquery-1.11.1.min.js"></script>
+<script src="assets/js/plugins/jquery-1.11.1.min.js"></script>
 <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 <!-- Menu Toggle Script -->
