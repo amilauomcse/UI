@@ -13,7 +13,7 @@ angular.module('blimplt').controller('blimplt', ['$scope', '$http', '$cookies',
                 contentType: "application/json",
                 data: JSON.stringify($scope.loginForm),
                 headers: {
-                    'Access-Control-Request-Origin': '*'
+                    'Access-Control-Allow-Origin': '*'
                 },
                 success: function (results) {
                     console.log(results);

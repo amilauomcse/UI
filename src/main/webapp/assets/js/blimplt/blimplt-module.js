@@ -1,4 +1,4 @@
 (function () {
-    angular.module('blimplt', ['ngCookies', 'ui.select', 'ngSanitize']);
+    angular.module('blimplt', ['ngCookies', 'ngSanitize']);
 
 })();

@@ -30,7 +30,7 @@
     <script type="text/javascript" src="assets/js/plugins/angular/angular-material.min.js"></script>
 
     <script type="text/javascript" src="assets/js/plugins/angular/select.js"
-            async></script>
+            ></script>
     <script type="text/javascript" src="assets/js/blimplt/blimplt-module.js"></script>
     <script type="text/javascript"
             src="assets/js/blimplt/loginController.js"></script>
