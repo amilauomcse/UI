@@ -2,283 +2,7 @@
 <html lang="en">
 
 <head>
-<style>
-    /*
-    DEMO STYLE
-*/
-    @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 
-
-    body {
-        font-family: 'Poppins', sans-serif;
-        background: #fafafa;
-    }
-
-    p {
-        font-family: 'Poppins', sans-serif;
-        font-size: 1.1em;
-        font-weight: 300;
-        line-height: 1.7em;
-        color: #999;
-    }
-
-    a, a:hover, a:focus {
-        color: inherit;
-        text-decoration: none;
-        transition: all 0.3s;
-    }
-
-    .navbar {
-        padding: 15px 10px;
-        background: #fff;
-        border: none;
-        border-radius: 0;
-        margin-bottom: 40px;
-        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-    }
-
-    .navbar-btn {
-        box-shadow: none;
-        outline: none !important;
-        border: none;
-    }
-
-    .line {
-        width: 100%;
-        height: 1px;
-        border-bottom: 1px dashed #ddd;
-        margin: 40px 0;
-    }
-
-    i, span {
-        display: inline-block;
-    }
-
-    /* ---------------------------------------------------
-        SIDEBAR STYLE
-    ----------------------------------------------------- */
-    .wrapper {
-        display: flex;
-        align-items: stretch;
-    }
-
-    #sidebar {
-        min-width: 250px;
-        max-width: 250px;
-        /*background: #7386D5;*/
-        color: #fff;
-        transition: all 0.3s;
-    }
-
-    #sidebar.active {
-        min-width: 80px;
-        max-width: 80px;
-        text-align: center;
-    }
-
-    #sidebar.active .sidebar-header h3, #sidebar.active .CTAs {
-        display: none;
-    }
-
-    #sidebar.active .sidebar-header strong {
-        display: block;
-    }
-
-    #sidebar ul li a {
-        text-align: left;
-    }
-
-    #sidebar.active ul li a {
-        padding: 20px 10px;
-        text-align: center;
-        font-size: 0.85em;
-    }
-
-    #sidebar.active ul li a i {
-        margin-right:  0;
-        display: block;
-        font-size: 1.8em;
-        margin-bottom: 5px;
-    }
-
-    #sidebar.active ul ul a {
-        padding: 10px !important;
-    }
-
-    #sidebar.active a[aria-expanded="false"]::before, #sidebar.active a[aria-expanded="true"]::before {
-        top: auto;
-        bottom: 5px;
-        right: 50%;
-        -webkit-transform: translateX(50%);
-        -ms-transform: translateX(50%);
-        transform: translateX(50%);
-    }
-
-    #sidebar .sidebar-header {
-        padding: 20px;
-        background: #6d7fcc;
-    }
-
-    #sidebar .sidebar-header strong {
-        display: none;
-        font-size: 1.8em;
-    }
-
-    #sidebar ul.components {
-        padding: 20px 0;
-        border-bottom: 1px solid #47748b;
-    }
-
-    #sidebar ul li a {
-        padding: 10px;
-        font-size: 1.1em;
-        display: block;
-    }
-    #sidebar ul li a:hover {
-        color: #7386D5;
-        background: #fff;
-    }
-    #sidebar ul li a i {
-        margin-right: 10px;
-    }
-
-    #sidebar ul li.active > a, a[aria-expanded="true"] {
-        color: #fff;
-        background: #6d7fcc;
-    }
-
-
-    a[data-toggle="collapse"] {
-        position: relative;
-    }
-
-    a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
-        content: '\e259';
-        display: block;
-        position: absolute;
-        right: 20px;
-        font-family: 'Glyphicons Halflings';
-        font-size: 0.6em;
-    }
-    a[aria-expanded="true"]::before {
-        content: '\e260';
-    }
-
-
-    ul ul a {
-        font-size: 0.9em !important;
-        padding-left: 30px !important;
-        background: #6d7fcc;
-    }
-
-    ul.CTAs {
-        padding: 20px;
-    }
-
-    ul.CTAs a {
-        text-align: center;
-        font-size: 0.9em !important;
-        display: block;
-        border-radius: 5px;
-        margin-bottom: 5px;
-    }
-
-    a.download {
-        background: #fff;
-        color: #7386D5;
-    }
-
-    a.article, a.article:hover {
-        background: #6d7fcc !important;
-        color: #fff !important;
-    }
-
-
-
-    /* ---------------------------------------------------
-        CONTENT STYLE
-    ----------------------------------------------------- */
-    #content {
-        padding: 20px;
-        min-height: 100vh;
-        transition: all 0.3s;
-    }
-
-
-    /* ---------------------------------------------------
-        MEDIAQUERIES
-    ----------------------------------------------------- */
-    @media (min-width: 768px) {
-        .navbar-fixed-top {
-            padding-right: 25px;
-        }
-    }
-
-    @media (max-width: 768px) {
-        #sidebar {
-            min-width: 80px;
-            max-width: 80px;
-            text-align: center;
-            margin-left: -80px !important ;
-        }
-        a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
-            top: auto;
-            bottom: 5px;
-            right: 50%;
-            -webkit-transform: translateX(50%);
-            -ms-transform: translateX(50%);
-            transform: translateX(50%);
-        }
-        #sidebar.active {
-            margin-left: 0 !important;
-        }
-
-        #sidebar .sidebar-header h3, #sidebar .CTAs {
-            display: none;
-        }
-
-        #sidebar .sidebar-header strong {
-            display: block;
-        }
-
-        #sidebar ul li a {
-            padding: 20px 10px;
-        }
-
-        #sidebar ul li a span {
-            font-size: 0.85em;
-        }
-        #sidebar ul li a i {
-            margin-right:  0;
-            display: block;
-        }
-
-        #sidebar ul ul a {
-            padding: 10px !important;
-        }
-
-        #sidebar ul li a i {
-            font-size: 1.3em;
-        }
-        #sidebar {
-            margin-left: 0;
-        }
-        #sidebarCollapse span {
-            display: none;
-        }
-    }
-    .menu-icon {
-        position: fixed;
-        width: 50px;
-        height: 50px;
-        cursor: pointer;
-        top: 240px;
-        z-index: 100;
-        color: red;
-        background: #494c4f;
-        padding: 8px;
-    }
-</style>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -290,10 +14,11 @@
     <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/form-elements.css">
     <link rel="stylesheet" href="assets/css/wizard.css">
+    <link rel="stylesheet" href="assets/css/retailerHome.css">
     <!-- Fine Uploader Gallery CSS file
        ====================================================================== -->
     <link href="assets/fine-uploader/fine-uploader-gallery.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!-- Fine Uploader JS file
     ====================================================================== -->
     <script src="assets/fine-uploader/fine-uploader.js"></script>
@@ -400,183 +125,184 @@
     </script>
 </head>
 
-<body style="background-color: #000027" ng-app="blimplt" ng-controller="blimplt" ng-cloak>
+<body style="background-color: white" ng-app="blimplt" ng-controller="blimplt" ng-cloak>
 <div id="wrapper">
-<jsp:include page="retailerMenuBar.jsp"></jsp:include>
-<!-- Top content -->
+    <jsp:include page="retailerMenuBar.jsp"></jsp:include>
+    <!-- Top content -->
 
-<div class="top-content" style="margin-top: -430px;">
+    <div class="top-content" style="margin-top: 60px;">
 
-            <div class="container">
+        <div class="container">
+            <div class="well well-sm">
+                <%--<strong>Product List</strong>--%>
+                <div class="btn-group" style="width: 100%">
+                    <div class="btn-group" style="float:left">
+                        <a href="#" ng-click="addProduct()" class="btn btn-default btn-sm"><i style="color: red;"
+                                                                                              class="fa fa-plus fa-2x"
+                                                                                              aria-hidden="true"></i></a>
+                    </div>
+                    <div class="btn-group" style="float: right;">
+                        <a href="#" id="list" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-th-list">
+                        </span></a>
+                        <a href="#" id="grid" class="btn btn-default btn-sm"><span
+                                class="glyphicon glyphicon-th"></span></a>
+                    </div>
 
-                <div class="row">
-                    <button ng-click="addProduct()" style="float: right; background-color: green"
-                            class="btn btn-primary">Add Product
-                    </button>
                 </div>
             </div>
-
-            <div class="modal fade" id="selectProductModel" tabindex="-1" role="dialog"
-                 aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Select Product Category</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="row" id="selectProductCategoryForm">
-                                <div class="form-box" style="padding: 10px;">
-
-                                    <form role="form" action="" method="post">
-
-                                        <%--<h4 style="text-align: center">Tell us who you are!</h4>--%>
-                                        <div class="row form-group">
-                                            <div class="col-sm-9">
-                                                <select class="form-control">
-                                                    <option>Men's wear</option>
-                                                    <option>Women's wear</option>
-                                                    <option>Accessories</option>
-                                                    <option>Shoes</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <button class="btn btn-primary">New</button>
-                                            </div>
-                                        </div>
-
-
-                                    </form>
+            <div id="products" class="row list-group">
+                <div class="item  col-xs-4 col-lg-4" ng-repeat="product in retailer.productList track by $index">
+                    <div class="thumbnail">
+                        <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt=""/>
+                        <div class="caption">
+                            <h4 class="group inner list-group-item-heading">
+                                {{product.productName}}</h4>
+                            <p class="group inner list-group-item-text">
+                                {{product.description}}</p>
+                            <div class="row">
+                                <div class="col-xs-12 col-md-6">
+                                    <p class="lead">
+                                        $ {{product.unitPrice}}</p>
+                                </div>
+                                <div class="col-xs-12 col-md-6">
+                                    <a class="btn btn-success" href="http://www.jquery2dotnet.com">More</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" ng-click="selectProductCategory()" class="btn btn-next">Done</button>
-                        </div>
                     </div>
                 </div>
+
             </div>
-            <div class="modal fade" id="addProductModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                 aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title">New Product</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="row" id="retailerAddProductForm">
-                                <form role="form" action="" method="post" class="f1">
+        </div>
 
-                                    <div class="f1-steps">
-                                        <div class="f1-progress">
-                                            <div class="f1-progress-line" data-now-value="16.66"
-                                                 data-number-of-steps="3"
-                                                 style="width: 16.66%;"></div>
-                                        </div>
-                                        <div class="f1-step active">
-                                            <div class="f1-step-icon"><i class="fa fa-user"></i></div>
-                                            <p>Product Info</p>
-                                        </div>
-                                        <div class="f1-step">
-                                            <div class="f1-step-icon"><i class="fa fa-key"></i></div>
-                                            <p>More Info</p>
-                                        </div>
-                                        <div class="f1-step">
-                                            <div class="f1-step-icon"><i class="fa fa-twitter"></i></div>
-                                            <p>Images</p>
-                                        </div>
+        <div class="modal fade" id="addProductModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">New Product</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row" id="retailerAddProductForm">
+                            <form role="form" action="" method="post" class="f1">
 
+                                <div class="f1-steps">
+                                    <div class="f1-progress">
+                                        <div class="f1-progress-line" data-now-value="16.66"
+                                             data-number-of-steps="3"
+                                             style="width: 16.66%;"></div>
+                                    </div>
+                                    <div class="f1-step active">
+                                        <div class="f1-step-icon"><i class="fa fa-user"></i></div>
+                                        <p>Product Info</p>
+                                    </div>
+                                    <div class="f1-step">
+                                        <div class="f1-step-icon"><i class="fa fa-key"></i></div>
+                                        <p>More Info</p>
+                                    </div>
+                                    <div class="f1-step">
+                                        <div class="f1-step-icon"><i class="fa fa-twitter"></i></div>
+                                        <p>Images</p>
                                     </div>
 
-                                    <fieldset>
-                                        <div class="form-group">
-                                            <label for="product-code">Product Code</label>
-                                            <input ng-model="product.productCode" type="text" class="form-control"
-                                                   id="product-code">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="product-name">Product Name</label>
-                                            <input ng-model="product.productName" type="text" name="business-email"
-                                                   class="business-email form-control"
-                                                   id="product-name">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="unit-price">Unit Price</label>
-                                            <input ng-model="product.unitPrice" type="text"
-                                                   class="form-control" id="unit-price">
-                                        </div>
+                                </div>
 
-                                        <div class="form-group">
-                                            <label for="unit-description"> Description</label>
-                                            <textarea ng-model="product.description"
-                                                      class="form-control" id="unit-description"></textarea>
-                                        </div>
+                                <fieldset>
 
-                                        <div class="f1-buttons">
-                                            <button type="button" class="btn btn-next">Next</button>
-                                        </div>
-                                    </fieldset>
-                                    <fieldset>
-                                        <div class="form-group">
-                                            <label for="business-stock-count">Available Stock Count</label>
-                                            <input ng-model="product.stockCount" type="number" name="business-stock-count"
-                                                   class="business-stock-count form-control"
-                                                   id="business-stock-count">
-                                        </div>
+                                    <div class="form-group">
+                                        <label for="product-code">Product Code</label>
+                                        <input ng-model="retailer.product.productCode" type="text" class="form-control"
+                                               id="product-code">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="product-name">Product Name</label>
+                                        <input ng-model="retailer.product.productName" type="text" name="business-email"
+                                               class="business-email form-control"
+                                               id="product-name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="unit-price">Unit Price</label>
+                                        <input ng-model="retailer.product.unitPrice" type="text"
+                                               class="form-control" id="unit-price">
+                                    </div>
 
-                                        <div class="form-group">
-                                            <input ng-model="product.enableQuickBuy" type="checkbox" name="business-quick-buy" class="business-quick-buy"
-                                                   id="business-quick-buy">
-                                            <label for="business-quick-buy">Add to quick buy</label>
-                                        </div>
-                                        <div ng-if="product.enableQuickBuy" class="form-group">
-                                            <label for="business-quick-buy-stock-count">Quick buy Stock Count</label>
-                                            <input ng-model="product.quickBuyStockCount" type="number" name="business-quick-buy-stock-count"
-                                                   class="business-quick-buy-stock-count form-control"
-                                                   id="business-quick-buy-stock-count">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="business-discount">Discount</label>
-                                            <input ng-model="product.discount" type="number" name="business-discount"
-                                                   class="business-discount form-control"
-                                                   id="business-discount">
-                                        </div>
-                                        <div class="form-group">
-                                            <input ng-model="product.enableThresholdNotification" type="checkbox" name="business-threshold-notification" class="business-threshold-notification"
-                                                   id="business-threshold-notification">
-                                            <label for="business-threshold-notification">Enable Threshold Notification</label>
-                                        </div>
-                                        <div class="f1-buttons">
-                                            <button type="button" class="btn btn-previous">Previous</button>
-                                            <button type="button" class="btn btn-next">Next</button>
-                                        </div>
+                                    <div class="form-group">
+                                        <label for="unit-description"> Description</label>
+                                        <textarea ng-model="retailer.product.description"
+                                                  class="form-control" id="unit-description"></textarea>
+                                    </div>
 
-                                    </fieldset>
-                                    <fieldset>
-                                        <div id="fine-uploader-gallery"></div>
+                                    <div class="f1-buttons">
+                                        <button type="button" class="btn btn-next">Next</button>
+                                    </div>
+                                </fieldset>
+                                <fieldset>
+                                    <div class="form-group">
+                                        <label for="business-stock-count">Available Stock Count</label>
+                                        <input ng-model="retailer.product.stockCount" type="number"
+                                               name="business-stock-count"
+                                               class="business-stock-count form-control"
+                                               id="business-stock-count">
+                                    </div>
 
-                                        <div class="f1-buttons">
-                                            <button type="button" class="btn btn-previous">Previous</button>
-                                            <button type="submit" class="btn btn-submit">Submit</button>
-                                        </div>
+                                    <div class="form-group">
+                                        <input ng-model="retailer.product.enableQuickBuy" type="checkbox"
+                                               name="business-quick-buy" class="business-quick-buy"
+                                               id="business-quick-buy">
+                                        <label for="business-quick-buy">Add to quick buy</label>
+                                    </div>
+                                    <div ng-if="retailer.product.enableQuickBuy" class="form-group">
+                                        <label for="business-quick-buy-stock-count">Quick buy Stock Count</label>
+                                        <input ng-model="retailer.product.quickBuyStockCount" type="number"
+                                               name="business-quick-buy-stock-count"
+                                               class="business-quick-buy-stock-count form-control"
+                                               id="business-quick-buy-stock-count">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="business-discount">Discount</label>
+                                        <input ng-model="retailer.product.discount" type="number"
+                                               name="business-discount"
+                                               class="business-discount form-control"
+                                               id="business-discount">
+                                    </div>
+                                    <div class="form-group">
+                                        <input ng-model="retailer.product.enableThresholdNotification" type="checkbox"
+                                               name="business-threshold-notification"
+                                               class="business-threshold-notification"
+                                               id="business-threshold-notification">
+                                        <label for="business-threshold-notification">Enable Threshold
+                                            Notification</label>
+                                    </div>
+                                    <div class="f1-buttons">
+                                        <button type="button" class="btn btn-previous">Previous</button>
+                                        <button type="button" class="btn btn-next">Next</button>
+                                    </div>
 
-                                    </fieldset>
+                                </fieldset>
+                                <fieldset>
+                                    <div id="fine-uploader-gallery"></div>
+
+                                    <div class="f1-buttons">
+                                        <button type="button" class="btn btn-previous">Previous</button>
+                                        <button type="submit" class="btn btn-submit" ng-click="createProduct()">Submit
+                                        </button>
+                                    </div>
+
+                                </fieldset>
 
 
-                                </form>
-                            </div>
+                            </form>
                         </div>
-
                     </div>
+
                 </div>
             </div>
+        </div>
 
-</div>
+    </div>
 </div>
 <!-- Footer -->
 
@@ -584,7 +310,7 @@
 <!-- Javascript -->
 <script src="assets/js/plugins/jquery-1.11.1.min.js"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-<script src="assets/js/plugins/jquery.backstretch.min.js"></script>
+<%--<script src="assets/js/plugins/jquery.backstretch.min.js"></script>--%>
 <script src="assets/js/plugins/retina-1.1.0.min.js"></script>
 <script src="assets/js/plugins/wizard.js"></script>
 
@@ -608,13 +334,18 @@
             allowedExtensions: ['jpeg', 'jpg', 'gif', 'png']
         }
     });
-    /*$(document).ready(function () {
-
-        $('#sidebarCollapse').on('click', function () {
-            $('#sidebar').toggleClass('active');
+    $(document).ready(function () {
+        $('#list').click(function (event) {
+            event.preventDefault();
+            $('#products .item').addClass('list-group-item');
         });
+        $('#grid').click(function (event) {
+            event.preventDefault();
+            $('#products .item').removeClass('list-group-item');
+            $('#products .item').addClass('grid-group-item');
+        });
+    });
 
-    });*/
 </script>
 
 </body>

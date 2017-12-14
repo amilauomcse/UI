@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default navbar-fixed-top" style="background: #ffffff;border-bottom: solid red 2px;">
     <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
                 aria-expanded="false" aria-controls="navbar">
@@ -7,6 +7,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
+        <img class ="col-sm-2" style="width: 150px;" src="assets/img/logo.png">
         <%--<a class="navbar-brand" href="#">BlimpIT</a>--%>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
@@ -15,32 +16,62 @@
 
         </ul>
         <ul class="nav navbar-nav list-unstyled components navbar-right">
-            <li><a href="#about"><i class="fa fa-usd" aria-hidden="true"></i> Quick Buy</a></li>
-            <li><a href="#contact"><i class="fa fa-comments" aria-hidden="true"></i> Chat Room</a></li>
-            <li><a href="#profile"><i class="fa fa-user" aria-hidden="true"></i> Profile</a></li>
+            <li><a href="#about" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-th fa-2x" aria-hidden="true"></i></a>
+                <ul class="dropdown-menu dropdown-user"
+                    style="left: 0 !important;">
+                    <li><a href="#" data-toggle="modal"
+                           ng-click="editComment(page,commentTheme,$index)"><i
+                            class="fa fa-pencil"></i>
+                        Edit </a>
+                    </li>
+                    <li><a href="#" data-toggle="modal"
+                           ng-click="addComment(page,$index)"><i
+                            class="fa fa-plus"></i>
+                        Add Below</a>
+                    </li>
+                    <li><a href="#"
+                           ng-click="deleteComment(page,$index)">
+                        <i class="fa fa-trash"></i> Delete </a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#contact"><i class="fa fa-comments fa-2x" aria-hidden="true"></i></a></li>
+            <li><a href="#profile"><i class="fa fa-user fa-2x" aria-hidden="true"></i></a></li>
         </ul>
     </div><!--/.nav-collapse -->
 </nav>
-<nav id="sidebar" class="navbar navbar-default navbar-fixed-left active" style="margin-top: 80px;">
+<nav id="sidebar" class="navbar navbar-default navbar-fixed-left active" style="top: 100px;margin-left: 1px;background: white;z-index: 1000;border:solid red 1px; position: fixed">
 
     <ul class="list-unstyled components">
 
         <li>
             <a href="#">
-                <i class="glyphicon glyphicon-briefcase"></i>
-                About
+                <i class="fa fa-product-hunt" aria-hidden="true"></i>
+                Products
             </a>
         </li>
         <li>
             <a href="#">
-                <i class="glyphicon glyphicon-link"></i>
-                Portfolio
+                <i class="fa fa-handshake-o" aria-hidden="true"></i>
+                Deals Hub
             </a>
         </li>
         <li>
             <a href="#">
-                <i class="glyphicon glyphicon-send"></i>
-                Contact
+                <i class="fa fa-volume-up" aria-hidden="true"></i>
+                Shout Outs
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fa fa-id-card-o" aria-hidden="true"></i>
+                Bundles
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                Quick Buy
             </a>
         </li>
     </ul>

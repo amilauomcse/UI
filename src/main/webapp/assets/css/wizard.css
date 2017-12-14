@@ -126,7 +126,8 @@ ul.navbar-nav {
 .f1-step.activated p { color: #f35b3f; }
 .f1-step.active p { color: #f35b3f; }
 
-.f1 fieldset { display: none; text-align: left; }
+.f1 fieldset { display: none; text-align: left;
+    border:none !important; }
 
 .f1-buttons { text-align: right; }
 
