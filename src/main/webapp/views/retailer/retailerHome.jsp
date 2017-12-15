@@ -10,18 +10,18 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/form-elements.css">
-    <link rel="stylesheet" href="assets/css/wizard.css">
-    <link rel="stylesheet" href="assets/css/retailerHome.css">
+    <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../assets/css/form-elements.css">
+    <link rel="stylesheet" href="../../assets/css/wizard.css">
+    <link rel="stylesheet" href="../../assets/css/retailerHome.css">
     <!-- Fine Uploader Gallery CSS file
        ====================================================================== -->
-    <link href="assets/fine-uploader/fine-uploader-gallery.css" rel="stylesheet">
+    <link href="../../assets/fine-uploader/fine-uploader-gallery.css" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!-- Fine Uploader JS file
     ====================================================================== -->
-    <script src="assets/fine-uploader/fine-uploader.js"></script>
+    <script src="../../assets/fine-uploader/fine-uploader.js"></script>
 
     <!-- Fine Uploader Gallery template
     ====================================================================== -->
@@ -31,18 +31,18 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <script type="text/javascript" src="assets/js/plugins/angular/angular.min.js"></script>
-    <script type="text/javascript" src="assets/js/plugins/angular/angular-cookies-1.6.0.min.js"></script>
-    <script type="text/javascript" src="assets/js/plugins/angular/angular-animate.min.js"></script>
-    <script type="text/javascript" src="assets/js/plugins/angular/angular-aria.min.js"></script>
-    <script type="text/javascript" src="assets/js/plugins/angular/angular-sanitize.js"></script>
-    <script type="text/javascript" src="assets/js/plugins/angular/angular-material.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/plugins/angular/angular.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/plugins/angular/angular-cookies-1.6.0.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/plugins/angular/angular-animate.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/plugins/angular/angular-aria.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/plugins/angular/angular-sanitize.js"></script>
+    <script type="text/javascript" src="../../assets/js/plugins/angular/angular-material.min.js"></script>
 
-    <script type="text/javascript" src="assets/js/plugins/angular/select.js"
+    <script type="text/javascript" src="../../assets/js/plugins/angular/select.js"
     ></script>
-    <script type="text/javascript" src="assets/js/blimplt/blimplt-module.js"></script>
+    <script type="text/javascript" src="../../assets/js/blimplt/blimplt-module.js"></script>
     <script type="text/javascript"
-            src="assets/js/blimplt/retailerHomeController.js"></script>
+            src="../../assets/js/blimplt/retailerHomeController.js"></script>
     <script type="text/template" id="qq-template-gallery">
         <div class="qq-uploader-selector qq-uploader qq-gallery" qq-drop-area-text="Drop files here">
             <div class="qq-total-progress-bar-container-selector qq-total-progress-bar-container">
@@ -308,11 +308,11 @@
 
 
 <!-- Javascript -->
-<script src="assets/js/plugins/jquery-1.11.1.min.js"></script>
-<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../assets/js/plugins/jquery-1.11.1.min.js"></script>
+<script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
 <%--<script src="assets/js/plugins/jquery.backstretch.min.js"></script>--%>
-<script src="assets/js/plugins/retina-1.1.0.min.js"></script>
-<script src="assets/js/plugins/wizard.js"></script>
+<script src="../../assets/js/plugins/retina-1.1.0.min.js"></script>
+<script src="../../assets/js/plugins/wizard.js"></script>
 
 <!--[if lt IE 10]>
 <script src="assets/js/placeholder.js"></script>

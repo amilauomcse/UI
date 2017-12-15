@@ -1,6 +1,6 @@
 angular.module('blimplt').controller('blimplt', ['$scope', '$http', '$cookies',
     function ($scope, $http, $cookies) {
-        $scope.sideMenuCollapsed = false;
+        $scope.sideMenuCollapsed = true;
 
         $scope.retailer = {};
         $scope.retailer.product = {};
@@ -46,8 +46,6 @@ angular.module('blimplt').controller('blimplt', ['$scope', '$http', '$cookies',
             });
         };
 
-        $scope.loadProducts();
-
         $scope.menuIconClicked = function(){
             if($scope.sideMenuCollapsed){
                 $scope.sideMenuCollapsed = false;
@@ -60,4 +58,8 @@ angular.module('blimplt').controller('blimplt', ['$scope', '$http', '$cookies',
                 $('.menu-icon').css('left','0px');
             }
         };
+
+        $scope.loadProducts();
+        $scope.menuIconClicked();
+
     }]);

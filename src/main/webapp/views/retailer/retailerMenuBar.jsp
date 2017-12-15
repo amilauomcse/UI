@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default navbar-fixed-top" style="background: #ffffff;border-bottom: solid red 2px;">
+<nav class="navbar navbar-default navbar-fixed-top" style="background: #ffffff;border-bottom: solid red 2px;padding-bottom: 0px;">
     <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
                 aria-expanded="false" aria-controls="navbar">
@@ -7,7 +7,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <img class ="col-sm-2" style="width: 150px;" src="assets/img/logo.png">
+        <img class ="col-sm-2" style="width: 150px;" src="../../assets/img/logo.png">
         <%--<a class="navbar-brand" href="#">BlimpIT</a>--%>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
@@ -16,7 +16,7 @@
 
         </ul>
         <ul class="nav navbar-nav list-unstyled components navbar-right">
-            <li><a href="#about" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-th fa-2x" aria-hidden="true"></i></a>
+            <li><a href="#about" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-th" aria-hidden="true"></i></a>
                 <ul class="dropdown-menu dropdown-user"
                     style="left: 0 !important;">
                     <li><a href="#" data-toggle="modal"
@@ -35,8 +35,8 @@
                     </li>
                 </ul>
             </li>
-            <li><a href="#contact"><i class="fa fa-comments fa-2x" aria-hidden="true"></i></a></li>
-            <li><a href="#profile"><i class="fa fa-user fa-2x" aria-hidden="true"></i></a></li>
+            <li><a href="#contact"><i class="fa fa-comments" aria-hidden="true"></i></a></li>
+            <li><a href="#profile"><i class="fa fa-user" aria-hidden="true"></i></a></li>
         </ul>
     </div><!--/.nav-collapse -->
 </nav>
