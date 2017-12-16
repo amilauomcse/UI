@@ -22,34 +22,38 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <script type="text/javascript" src="assets/js/plugins/angular/angular.min.js"></script>
+    <script src='assets/js/plugins/angular/angular.js'></script>
+    <script src='assets/js/plugins/angular/angular-animate.min.js'></script>
+    <script src='assets/js/plugins/angular/angular-route.min.js'></script>
+    <script src='assets/js/plugins/angular/angular-aria.min.js'></script>
+    <script src='assets/js/plugins/angular/angular-messages.min.js'></script>
+    <script src='assets/js/plugins/angular/svg-assets-cache.js'></script>
+    <script src='assets/js/plugins/angular/angular-material.js'></script>
+
     <script type="text/javascript" src="assets/js/plugins/angular/angular-cookies-1.6.0.min.js"></script>
-    <script type="text/javascript" src="assets/js/plugins/angular/angular-animate.min.js"></script>
-    <script type="text/javascript" src="assets/js/plugins/angular/angular-aria.min.js"></script>
     <script type="text/javascript" src="assets/js/plugins/angular/angular-sanitize.js"></script>
-    <script type="text/javascript" src="assets/js/plugins/angular/angular-material.min.js"></script>
 
     <script type="text/javascript" src="assets/js/plugins/angular/select.js"
             ></script>
-    <script type="text/javascript" src="assets/js/blimplt/blimplt-module.js"></script>
+    <script type="text/javascript" src="assets/js/blimpIT/blimpIT-module.js"></script>
     <script type="text/javascript"
-            src="assets/js/blimplt/loginController.js"></script>
+            src="assets/js/blimpIT/loginController.js"></script>
 </head>
 
 <body style="background-color: #000027">
 
 <!-- Top content -->
-<div class="top-content" ng-app="blimplt" ng-controller="blimplt" ng-cloak>
+<div class="top-content" ng-app="blimpIT" ng-controller="blimpIT" ng-cloak>
 
     <div class="inner-bg">
 
         <div class="container">
-            <div class="row">
+            <div class="row">`
                 <button onclick="location.href='signup.jsp';" style="float: right; background-color: green" class="btn btn-primary">Sign up</button>
             </div>
             <div class="row">
                 <div class="col-sm-8 col-sm-offset-2 text">
-                    <h1><strong>Blimplt</strong> </h1>
+                    <h1><strong>BlimpIT</strong> </h1>
 
                 </div>
             </div>

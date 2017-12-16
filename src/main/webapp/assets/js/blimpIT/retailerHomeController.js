@@ -1,4 +1,4 @@
-angular.module('blimplt').controller('blimplt', ['$scope', '$http', '$cookies',
+angular.module('blimpIT').controller('blimpIT', ['$scope', '$http', '$cookies',
     function ($scope, $http, $cookies) {
         $scope.sideMenuCollapsed = true;
 

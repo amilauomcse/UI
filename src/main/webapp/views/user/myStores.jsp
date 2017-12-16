@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../../assets/css/form-elements.css">
     <link rel="stylesheet" href="../../assets/css/wizard.css">
     <link rel="stylesheet" href="../../assets/css/userHome.css">
+    <link rel="stylesheet" href="../../assets/css/timeline.css">
     <!-- Fine Uploader Gallery CSS file
        ====================================================================== -->
     <link href="../../assets/fine-uploader/fine-uploader-gallery.css" rel="stylesheet">
@@ -41,11 +42,12 @@
 
     <script type="text/javascript" src="../../assets/js/plugins/angular/angular-cookies-1.6.0.min.js"></script>
     <script type="text/javascript" src="../../assets/js/plugins/angular/angular-sanitize.js"></script>
+
     <script type="text/javascript" src="../../assets/js/plugins/angular/select.js"
     ></script>
     <script type="text/javascript" src="../../assets/js/blimpIT/blimpIT-module.js"></script>
     <script type="text/javascript"
-            src="../../assets/js/blimpIT/userHomeController.js"></script>
+            src="../../assets/js/blimpIT/userStoresController.js"></script>
 </head>
 
 <body style="background-color: white" ng-app="blimpIT" ng-controller="blimpIT" ng-cloak>
@@ -56,23 +58,40 @@
     <div class="top-content" style="margin-top: 60px;">
 
         <div class="container">
-            <div id="products" class="row list-group">
-                <div class="item  col-xs-4 col-lg-4" ng-repeat="product in retailer.productList track by $index">
+            <div class="well well-sm">
+                <%--<strong>Product List</strong>--%>
+                <div class="btn-group" style="width: 100%">
+                    <div class="btn-group" style="float:left">
+                        <a href="#" ng-click="addNewStore()" class="btn btn-default btn-sm"><i style="color: red;"
+                                                                                              class="fa fa-plus fa-2x"
+                                                                                              aria-hidden="true"></i></a>
+                    </div>
+                    <div class="btn-group" style="float: right;">
+                        <a href="#" id="list" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-th-list">
+                        </span></a>
+                        <a href="#" id="grid" class="btn btn-default btn-sm"><span
+                                class="glyphicon glyphicon-th"></span></a>
+                    </div>
+
+                </div>
+            </div>
+            <div id="stores" class="row list-group">
+                <div class="item  col-xs-3 col-lg-3" ng-repeat="store in user.storeList track by $index">
                     <div class="thumbnail">
                         <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt=""/>
                         <div class="caption">
-                            <h4 class="group inner list-group-item-heading">
-                                {{product.productName}}</h4>
-                            <p class="group inner list-group-item-text">
-                                {{product.description}}</p>
+                            <h4 ng-if="!store.new" style="float: left" class="group inner list-group-item-heading">
+                                {{store.name}}</h4>
+
+                            <h4 ng-if="store.new" style="float: left" class="group inner list-group-item-heading">
+                                <input ng-model="store.name" class="form-control"></h4> <button ng-if="store.new" ng-click="saveNewStore(store)" class="btn btn-submit" type="button"> Save</button>
+
                             <div class="row">
                                 <div class="col-xs-12 col-md-6">
                                     <p class="lead">
-                                        $ {{product.unitPrice}}</p>
+                                        <%--$ {{product.unitPrice}}</p>--%>
                                 </div>
-                                <div class="col-xs-12 col-md-6">
-                                    <a class="btn btn-success" href="http://www.jquery2dotnet.com">More</a>
-                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -101,12 +120,12 @@
     $(document).ready(function () {
         $('#list').click(function (event) {
             event.preventDefault();
-            $('#products .item').addClass('list-group-item');
+            $('#stores .item').addClass('list-group-item');
         });
         $('#grid').click(function (event) {
             event.preventDefault();
-            $('#products .item').removeClass('list-group-item');
-            $('#products .item').addClass('grid-group-item');
+            $('#stores .item').removeClass('list-group-item');
+            $('#stores .item').addClass('grid-group-item');
         });
     });
 

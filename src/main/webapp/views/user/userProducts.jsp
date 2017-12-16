@@ -42,7 +42,6 @@
 
     <script type="text/javascript" src="../../assets/js/plugins/angular/angular-cookies-1.6.0.min.js"></script>
     <script type="text/javascript" src="../../assets/js/plugins/angular/angular-sanitize.js"></script>
-
     <script type="text/javascript" src="../../assets/js/plugins/angular/select.js"
     ></script>
     <script type="text/javascript" src="../../assets/js/blimpIT/blimpIT-module.js"></script>

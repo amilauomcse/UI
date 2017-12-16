@@ -1,4 +1,4 @@
-angular.module('blimplt').controller('blimplt', ['$scope', '$http', '$cookies',
+angular.module('blimpIT').controller('blimpIT', ['$scope', '$http', '$cookies',
     function ($scope, $http, $cookies) {
         $scope.sideMenuCollapsed = true;
         $scope.menuIconClicked = function(){
@@ -9,7 +9,7 @@ angular.module('blimplt').controller('blimplt', ['$scope', '$http', '$cookies',
 
             }else{
                 $scope.sideMenuCollapsed = true;
-                $('#sidebar').css('left','-100px');
+                $('#sidebar').css('left','-125px');
                 $('.menu-icon').css('left','0px');
             }
         };

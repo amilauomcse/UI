@@ -31,18 +31,22 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <script type="text/javascript" src="../../assets/js/plugins/angular/angular.min.js"></script>
+    <script src='../../assets/js/plugins/angular/angular.js'></script>
+    <script src='../../assets/js/plugins/angular/angular-animate.min.js'></script>
+    <script src='../../assets/js/plugins/angular/angular-route.min.js'></script>
+    <script src='../../assets/js/plugins/angular/angular-aria.min.js'></script>
+    <script src='../../assets/js/plugins/angular/angular-messages.min.js'></script>
+    <script src='../../assets/js/plugins/angular/svg-assets-cache.js'></script>
+    <script src='../../assets/js/plugins/angular/angular-material.js'></script>
+
     <script type="text/javascript" src="../../assets/js/plugins/angular/angular-cookies-1.6.0.min.js"></script>
-    <script type="text/javascript" src="../../assets/js/plugins/angular/angular-animate.min.js"></script>
-    <script type="text/javascript" src="../../assets/js/plugins/angular/angular-aria.min.js"></script>
     <script type="text/javascript" src="../../assets/js/plugins/angular/angular-sanitize.js"></script>
-    <script type="text/javascript" src="../../assets/js/plugins/angular/angular-material.min.js"></script>
 
     <script type="text/javascript" src="../../assets/js/plugins/angular/select.js"
     ></script>
-    <script type="text/javascript" src="../../assets/js/blimplt/blimplt-module.js"></script>
+    <script type="text/javascript" src="../../assets/js/blimpIT/blimpIT-module.js"></script>
     <script type="text/javascript"
-            src="../../assets/js/blimplt/retailerHomeController.js"></script>
+            src="../../assets/js/blimpIT/retailerHomeController.js"></script>
     <script type="text/template" id="qq-template-gallery">
         <div class="qq-uploader-selector qq-uploader qq-gallery" qq-drop-area-text="Drop files here">
             <div class="qq-total-progress-bar-container-selector qq-total-progress-bar-container">
@@ -125,7 +129,7 @@
     </script>
 </head>
 
-<body style="background-color: white" ng-app="blimplt" ng-controller="blimplt" ng-cloak>
+<body style="background-color: white" ng-app="blimpIT" ng-controller="blimpIT" ng-cloak>
 <div id="wrapper">
     <jsp:include page="retailerMenuBar.jsp"></jsp:include>
     <!-- Top content -->
